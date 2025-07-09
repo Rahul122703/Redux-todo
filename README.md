@@ -15,29 +15,34 @@ A production-grade fullstack boilerplate with the best of modern tooling:
 ## 🔧 Tech Stack
 
 - Frontend:
+
   - React + Vite
-  - Axios + React Router DOM
   - PWA support (optional)
+  - Axios + React Router DOM
   - Dark / Light mode toggle
   - Tailwind CSS + ShadCN UI
   - Redux Toolkit + React Redux
 
 - Backend (choose one):
+
   - Flask (Python)
   - Express (Node.js)
   - Django + Django REST Framework
 
 - Database:
+
   - MySQL
   - MongoDB
   - PostgreSQL
 
 - Auth:
+
   - JWT + OAuth2 (Google/GitHub)
 
 - Payment Gateway:
 
   - Stripe / Razorpay
+
 - Deployment:
   - Netlify, Vercel (Frontend)
   - Render, Railway, EC2 (Backend)
