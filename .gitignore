@@ -19,8 +19,6 @@ client/node_modules/
 server/node_modules/
 
 # Build output
-dist/
-client/dist/
 server/dist/
 dist-ssr/
 
