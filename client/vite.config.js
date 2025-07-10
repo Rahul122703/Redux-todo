@@ -26,7 +26,7 @@ const manifestPWA = {
       },
     ],
     share_target: {
-      action: "/share-target",
+      action: "/sharetarget",
       method: "POST",
       enctype: "multipart/form-data",
       params: {

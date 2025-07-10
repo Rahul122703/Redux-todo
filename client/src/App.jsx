@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import Signin from "./pages/Signin";
 import Signup from "./pages/Signup";
+import ShareTarget from "./pages/ShareTarget";
 import { ThemeProvider, createTheme, CssBaseline } from "@mui/material";
 import { useSelector } from "react-redux";
 
@@ -25,6 +26,7 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/signin" element={<Signin />} />
           <Route path="/signup" element={<Signup />} />
+          <Route path="/sharetarget" element={<ShareTarget />} />
           <Route path="/*" element={<Home />} />
         </Routes>
       </Router>
