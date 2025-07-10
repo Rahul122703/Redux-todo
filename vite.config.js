@@ -46,6 +46,17 @@ const manifestPWA = {
 
 export default defineConfig({
   plugins: [react(), tailwindcss(), VitePWA(manifestPWA)],
+  server: {
+    middlewareMode: false,
+    setup: ({ middlewares }) => {
+      middlewares.use(
+        history({
+          index: "/index.html",
+          verbose: true,
+        })
+      );
+    },
+  },
   optimizeDeps: {
     include: ["@emotion/styled"],
   },
