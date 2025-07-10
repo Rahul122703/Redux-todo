@@ -1,6 +1,8 @@
 import React from "react";
 import { Typography, Box } from "@mui/material";
 
+import InstallButton from "../components/InstallButton";
+
 const Home = () => {
   return (
     <Box
@@ -11,6 +13,7 @@ const Home = () => {
         p: 4,
       }}>
       <Typography variant="h3">Welcome to the Home Page</Typography>
+      <InstallButton />
     </Box>
   );
 };

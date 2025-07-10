@@ -16,6 +16,7 @@ import Brightness7Icon from "@mui/icons-material/Brightness7";
 import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { toggleTheme } from "../feature/Uislice";
+import ShareButton from "./ShareButton";
 
 const Navbar = () => {
   const dispatch = useDispatch();
@@ -56,6 +57,7 @@ const Navbar = () => {
               <AccountCircle />
             </IconButton>
           </Tooltip>
+          <ShareButton />
           <Menu
             anchorEl={anchorEl}
             open={menuOpen}

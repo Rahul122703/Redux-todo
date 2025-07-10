@@ -4,13 +4,6 @@ import { VitePWA } from "vite-plugin-pwa";
 import tailwindcss from "@tailwindcss/vite";
 
 const manifestPWA = {
-  registerType: "autoUpdate",
-  includeAssets: [
-    "favicon.svg",
-    "favicon.ico",
-    "robots.txt",
-    "apple-touch-icon.png",
-  ],
   manifest: {
     name: "Vite-MUI-Tailwind",
     short_name: "ViteAppdd",
@@ -32,6 +25,22 @@ const manifestPWA = {
         purpose: "any maskable",
       },
     ],
+    share_target: {
+      action: "/share-target",
+      method: "POST",
+      enctype: "multipart/form-data",
+      params: {
+        title: "title",
+        text: "text",
+        url: "url",
+        files: [
+          {
+            name: "file",
+            accept: ["*/*"],
+          },
+        ],
+      },
+    },
   },
 };
 
