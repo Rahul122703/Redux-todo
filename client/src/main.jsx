@@ -11,13 +11,14 @@ import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
 
-import { ApiProvider } from "@reduxjs/toolkit/query/react";
-import { apiSlice } from "./feature/api/apiSlice";
+import { Provider } from "react-redux";
+
+import { store } from "./app/store";
 
 const container = document.getElementById("root");
 const root = createRoot(container);
 root.render(
-  <ApiProvider api={apiSlice}>
+  <Provider store={store}>
     <App />
-  </ApiProvider>
+  </Provider>
 );
